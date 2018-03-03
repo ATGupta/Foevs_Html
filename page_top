@@ -28,7 +28,7 @@
 \takefromchapterMenu
 				</li>
                 <li>
-                	<a href="?un=contact">Contact</a>
+                	<a href="?un=Contact&ch=contact">Contact</a>
                 </li>
             </ul>
         </div>
