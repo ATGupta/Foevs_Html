@@ -43,14 +43,14 @@ public class GenHtml {
 						String n3 = files3[i3].getName();// at level 2, all files
 
 						if (n3.equals("data")) {
-							createWebpage(n1 + "/" + n2 + "/" + n3, getPrintObject(n1 + "/" + n2 + "/" + n3));
+							createWebpage(n1 + "/" + n2 + "/" + n3, getPrintObject(n1 + "/" + n2 + "/" + "info.html"));
 						} else
 							copyFile(files3[i3].getAbsolutePath(), n1 + "/" + n2 + "/" + n3);
 					}
 				}
 			} else {
 				if (n1.equals("data")) {
-					createWebpage(n1, getPrintObject(n1));
+					createWebpage(n1, getPrintObject("info.html"));
 				} else
 					copyFile(files1[i1].getAbsolutePath(), n1);
 			}
@@ -133,7 +133,7 @@ public class GenHtml {
 					sw.println("<ul>");
 					tab = 1;
 				}
-				sw.println("<li><a href=\"/" + unit.replaceAll("\\s", "") + "/" + a.replaceAll("\\s", "") + "/data" + "\">" + a
+				sw.println("<li><a href=\"/" + unit.replaceAll("\\s", "") + "/" + a.replaceAll("\\s", "") + "/info.html" + "\">" + a
 						+ "</a></li>");
 			} else {
 				unit = a;
