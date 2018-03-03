@@ -99,7 +99,7 @@ public class GenHtml {
 			} else if (st.startsWith("\\image")) {
 				st = st.substring(7);
 				st = path + st;// path already contains "/" at the end
-				sw.println("<p style=\"text-align: center\"><img style=\"height: 300px\" src=\"" + st + "\"");
+				sw.println("<p style=\"text-align: center\"><img style=\"height: 300px\" src=\"/" + st + "\"");
 				continue;
 			}
 			sw.println(st);
