@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foevs</title>
+        <link href="/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body >
+        <div id="header">
+            <div id="headerImage" style="height: 132px; width: 132px">
+                <a  title="Foevs" href="?">
+                    <img src="/title_image" style="width: 132px">
+                </a>
+            </div>
+            <h1 style="display: inline-block;">
+                <b>FACTS OF ENVIRONMENTAL SCIENCE</b>
+            </h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="?">Home &#9662</a>
+                    <ul>
+                        <li><a href="/Home/acknowledgement/data">Acknowledgements</a></li>
+                    </ul>
+                </li>
+                <li>
+               		<a href="">Chapters &#9662</a>
+<ul>
+<li><a href="?">Modes of Existence &#9656</a>
+<ul>
+<li><a href="/ModesofExistence/ModesofExistenceandResourceUse/data">Modes of Existence and Resource Use</a></li>
+<li><a href="/ModesofExistence/ImpactsonNaturalResourceBaseandEcology/data">Impacts on Natural Resource Base and Ecology</a></li>
+<li><a href="/ModesofExistence/SocialOrganization/data">Social Organization</a></li>
+</ul>
+</li>
+<li><a href="?">Ecology &#9656</a>
+<ul>
+<li><a href="/Ecology/ConceptofanEcosystem/data">Concept of an Ecosystem</a></li>
+<li><a href="/Ecology/HabitatsandNiches/data">Habitats and Niches</a></li>
+<li><a href="/Ecology/FlowofEnergy/data">Flow of Energy</a></li>
+<li><a href="/Ecology/NutrientCycles/data">Nutrient Cycles</a></li>
+<li><a href="/Ecology/Biomes/data">Biomes</a></li>
+</ul>
+</li>
+<li><a href="?">Pollution &#9656</a>
+<ul>
+<li><a href="/Pollution/DisruptionofNutrientCyclesandHabitats/data">Disruption of Nutrient Cycles and Habitats</a></li>
+<li><a href="/Pollution/PollutionControlApproaches/data">Pollution Control Approaches</a></li>
+<li><a href="/Pollution/WaterPollution/data">Water Pollution</a></li>
+<li><a href="/Pollution/SoilPollution/data">Soil Pollution</a></li>
+</ul>
+</li>
+<li><a href="?">Legal Regimes for Sustainable Development &#9656</a>
+<ul>
+<li><a href="/LegalRegimesforSustainableDevelopment/NationalLegislativeFrameworks/data">National Legislative Frameworks</a></li>
+<li><a href="/LegalRegimesforSustainableDevelopment/InternationalLegalRegimes/data">International Legal Regimes</a></li>
+</ul>
+</li>
+<li><a href="?">Technology and Environment &#9656</a>
+<ul>
+<li><a href="/TechnologyandEnvironment/TechnologicalEvolutionandModels/data">Technological Evolution and Models</a></li>
+<li><a href="/TechnologyandEnvironment/RenewableEnergy/data">Renewable Energy</a></li>
+<li><a href="/TechnologyandEnvironment/Health/data">Health</a></li>
+<li><a href="/TechnologyandEnvironment/Biotechnology/data">Biotechnology</a></li>
+</ul>
+</li>
+<li><a href="?">Design and Planning for Environmental Conservation &#9656</a>
+<ul>
+<li><a href="/DesignandPlanningforEnvironmentalConservation/EcosystemAnalysis/data">Ecosystem Analysis</a></li>
+<li><a href="/DesignandPlanningforEnvironmentalConservation/HumanEnvironmentInteractions/data">Human Environment Interactions</a></li>
+<li><a href="/DesignandPlanningforEnvironmentalConservation/EvaluationandAssessmentofImpacts/data">Evaluation and Assessment of Impacts</a></li>
+<li><a href="/DesignandPlanningforEnvironmentalConservation/DesignofSolutions/data">Design of Solutions</a></li>
+</ul>
+</li>
+<li><a href="?">Human Beings and Nature &#9656</a>
+<ul>
+<li><a href="/HumanBeingsandNature/ModernSchoolsofEcologicalThought/data">Modern Schools of Ecological Thought	</a></li>
+<li><a href="/HumanBeingsandNature/DeepEcologyvs.ShallowEcology/data">Deep Ecology vs. Shallow Ecology</a></li>
+<li><a href="/HumanBeingsandNature/StewardshipofLand/data">Stewardship of Land</a></li>
+<li><a href="/HumanBeingsandNature/SocialEcology/data">Social Ecology</a></li>
+<li><a href="/HumanBeingsandNature/Feminism/data">Feminism</a></li>
+<li><a href="/HumanBeingsandNature/GreenPolitics/data">Green Politics</a></li>
+<li><a href="/HumanBeingsandNature/SustainableDevelopment/data">Sustainable Development</a></li>
+</ul>
+</li>
+<li><a href="?">Population and Conservation Ecology &#9656</a>
+<ul>
+<li><a href="/PopulationandConservationEcology/PopulationDynamics/data">Population Dynamics</a></li>
+<li><a href="/PopulationandConservationEcology/HumanPopulations/data">Human Populations</a></li>
+<li><a href="/PopulationandConservationEcology/PopulationRegulation/data">Population Regulation</a></li>
+<li><a href="/PopulationandConservationEcology/HumanPopulationControl/data">Human Population Control</a></li>
+<li><a href="/PopulationandConservationEcology/ThreatstotheEcosystem/data">Threats to the Ecosystem</a></li>
+<li><a href="/PopulationandConservationEcology/Conservation/data">Conservation</a></li>
+</ul>
+</li>
+<li><a href="?">Pollution Monitoring &#9656</a>
+<ul>
+<li><a href="/PollutionMonitoring/PollutionMonitoring/data">Pollution Monitoring</a></li>
+<li><a href="/PollutionMonitoring/MonitoringtheAtmosphere/data">Monitoring the Atmosphere</a></li>
+<li><a href="/PollutionMonitoring/InternationalandNationalQualityStandards/data">International and National Quality Standards</a></li>
+<li><a href="/PollutionMonitoring/WaterTesting/data">Water Testing</a></li>
+<li><a href="/PollutionMonitoring/SoilTesting/data">Soil Testing</a></li>
+</ul>
+</li>
+<li><a href="?">Third World Development &#9656</a>
+<ul>
+<li><a href="/ThirdWorldDevelopment/Urban-RuralDivide/data">Urban-Rural Divide</a></li>
+<li><a href="/ThirdWorldDevelopment/ConventionalParadigmofDevelopment/data">Conventional Paradigm of Development</a></li>
+<li><a href="/ThirdWorldDevelopment/GandhianApproach/data">Gandhian Approach</a></li>
+<li><a href="/ThirdWorldDevelopment/UrbanEnvironmentalPlanningandManagement/data">Urban Environmental Planning and Management</a></li>
+</ul>
+</li>
+<li><a href="?">Sustainable Agriculture &#9656</a>
+<ul>
+<li><a href="/SustainableAgriculture/TraditionalAgricultureinIndia/data">Traditional Agriculture in India</a></li>
+<li><a href="/SustainableAgriculture/Food/data">Food</a></li>
+</ul>
+</li>
+<li><a href="?">Environmental and Natural Resource Economics &#9656</a>
+<ul>
+<li><a href="/EnvironmentalandNaturalResourceEconomics/Definition/data">Definition</a></li>
+<li><a href="/EnvironmentalandNaturalResourceEconomics/GNPvs.OtherFormsofMeasuringIncome/data">GNP vs. Other Forms of Measuring Income</a></li>
+<li><a href="/EnvironmentalandNaturalResourceEconomics/EconomicStatusandWelfare/data">Economic Status and Welfare</a></li>
+<li><a href="/EnvironmentalandNaturalResourceEconomics/Externalities/data">Externalities</a></li>
+<li><a href="/EnvironmentalandNaturalResourceEconomics/NaturalCapitalRegeneration/data">Natural Capital Regeneration</a></li>
+</ul>
+</li>
+<li><a href="?">International Relations and the Environment &#9656</a>
+<ul>
+<li><a href="/InternationalRelationsandtheEnvironment/Trans-nationalcharacteristicsofEnvironmentalIssues/data">Trans-national characteristics of Environmental Issues</a></li>
+<li><a href="/InternationalRelationsandtheEnvironment/ImpactofNationalPolitics,NationalSovereigntyandInterest/data">Impact of National Politics, National Sovereignty and Interest</a></li>
+<li><a href="/InternationalRelationsandtheEnvironment/InternationalTrade/data">International Trade</a></li>
+<li><a href="/InternationalRelationsandtheEnvironment/InternationalAid/data">International Aid</a></li>
+</ul>
+</li>
+</ul>
+				</li>
+                <li>
+                	<a href="?">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <p></p>
+<table>
+	<td>
+<img class=image src="ModesofExistence/SocialOrganization/home_image" style="width: 300px; text-align: center;">
+	</td>
+	<td>
+		<p>I had a great enthusiasm for studying environmental science. I passed out class 10 in 2011 from ICSE board. I continued with ISC board. I took Environmental Science as a subject in class 12.
+		<p>I could not find any particular book which was strictly according to the syllabus. I then started consulting various resources - books and internet, and made notes as per the syllabus of Environmental Science, subject code 877, ISC 2013.
+		<p>On this website, I put all the data that I collected. My motive is to make all the resources available for such students, so that, they may get the chapters and topics within without any starvation for knowledge. This set of information is intended for the CISCE high school students who study Environmental Science and all other people who want to study and get acquainted with the basics of the subject.
+		<p>I hope that this website set of information will be helpful for you all, and you have a great time reading Environmental Science.
+	</td>
+</table>
+    </body>
+    <footer>
+    	Webmaster: <b><a>ATG</a></b>
+    	<a  title="Google+" href="https://www.google.com/+AryaTanmayGupta" target="_blank">
+    		<img style="height: 12px" src="/Google">
+    	</a>
+    	<a title="Linkedin" href="https://www.linkedin.com/in/aryatanmaygupta/" target="_blank">
+    		<img style="height: 12px" src="/Linkedin">
+    	</a>
+    </footer>
+</html>

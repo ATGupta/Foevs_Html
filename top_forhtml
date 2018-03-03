@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foevs</title>
+        <link href="/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body >
+        <div id="header">
+            <div id="headerImage" style="height: 132px; width: 132px">
+                <a  title="Foevs" href="?">
+                    <img src="/title_image" style="width: 132px">
+                </a>
+            </div>
+            <h1 style="display: inline-block;">
+                <b>FACTS OF ENVIRONMENTAL SCIENCE</b>
+            </h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="?">Home &#9662</a>
+                    <ul>
+                        <li><a href="/Home/acknowledgement/data">Acknowledgements</a></li>
+                    </ul>
+                </li>
+                <li>
+               		<a href="">Chapters &#9662</a>
+\takefromchapterMenu
+				</li>
+                <li>
+                	<a href="?">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <p></p>
