@@ -75,7 +75,7 @@ public class GenHtml {
 
 	private void createWebpage(String path, PrintWriter pw) throws IOException {
 		printData(readFun("top_forhtml"), pw, path);
-		printData(readFun("data"), pw, path);
+		printData(readFun(path), pw, path);
 		printData(readFun("bottom_forhtml"), pw, path);
 		pw.close();
 	}
