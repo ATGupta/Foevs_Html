@@ -18,13 +18,13 @@
         <div id="nav">
             <ul>
                 <li>
-                    <a href="?">Home &#9662</a>
+                    <a href="./">Home &#9662</a>
                     <ul>
                         <li><a href="?un=Home&ch=acknowledgement">Acknowledgements</a></li>
                     </ul>
                 </li>
                 <li>
-               		<a href="">Chapters &#9662</a>
+               		<a href>Chapters &#9662</a>
 \takefromchapterMenu
 				</li>
                 <li>

@@ -144,7 +144,7 @@ public class GenHtml {
 					sw.println("</ul>\n</li>");
 					tab = 0;
 				}
-				sw.println("<li><a href=\"?\">" + a + " &#9656</a>");
+				sw.println("<li><a>" + a + " &#9656</a>");
 			}
 		}
 	}
