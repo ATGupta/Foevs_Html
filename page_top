@@ -8,7 +8,7 @@
     <body >
         <div id="header">
             <div id="headerImage" style="height: 132px; width: 132px">
-                <a  title="Foevs" href="?">
+                <a  title="Foevs" href="\">
                     <img src="Resources_FOEVS_ATG/title_image" style="width: 132px">
                 </a>
             </div>
