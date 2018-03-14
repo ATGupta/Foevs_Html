@@ -4,6 +4,14 @@
         <title>Facts of Environmental Science</title>
         <link rel="shortcut icon" href="\title_image"/>
         <link href="/styles.css" type="text/css" rel="stylesheet"/>
+        
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+  			(adsbygoogle = window.adsbygoogle || []).push({
+    			google_ad_client: "ca-pub-4872933753971674",
+    			enable_page_level_ads: true
+  			});
+		</script>
     </head>
     <body >
         <div id="header">
@@ -143,7 +151,7 @@
         </div>
         <p></p>
 <h2 style="text-align:center">FILL THIS FORM FOR COMMENTS / SUGGESTIONS</h2>
-  <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzhtV5HhU6hmO9Obnl14CFHeUn99nm4Xm_9Ml3gt_7H3jyw-7oV/exec">
+<form id="gform" name="gform" onsubmit="return checkEntries()" method="POST" action="https://script.google.com/macros/s/AKfycbzhtV5HhU6hmO9Obnl14CFHeUn99nm4Xm_9Ml3gt_7H3jyw-7oV/exec">
 
 	<p style="text-align:center">Name:
 	
@@ -170,14 +178,31 @@
 	
 	<p style="text-align:center">
 	
-  </form>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-  			(adsbygoogle = window.adsbygoogle || []).push({
-    			google_ad_client: "ca-pub-4872933753971674",
-    			enable_page_level_ads: true
-  			});
-		</script>
+</form>
+<script>
+	function checkEntries(){
+		var input=document.getElementById("Name").value;
+		if(input==""){
+			alert("No name Entered.!");
+			return false
+		}
+		var input=document.getElementById("Email").value;
+		if(input==0){
+			alert("No email id Entered.!");
+			return false
+		}
+		if(input.indexOf('@')<0){
+			alert("Invalid Email address.!");
+			return false
+		}
+		var input=document.getElementById("Message").value;
+		if(input==0){
+			alert("No message Entered.!");
+			return false
+		}
+		return true
+	}
+</script>
     </body>
     <footer>
     	At social media 
