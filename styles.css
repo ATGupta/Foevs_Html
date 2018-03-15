@@ -5,8 +5,8 @@ html {
 #headerImage {
 	display: inline-block;
 	margin-top: 25px;
-	margin-left: 50%;
-	margin-right: 100%;
+	margin-left: 6%;
+	margin-right: 10%;
 	border: solid 2px rgb(64, 64, 64);
 	border-radius: 5px 5px 5px 5px;
 }
@@ -15,8 +15,8 @@ body {
 	padding: 2px 2px 2px 2px;
 	border: solid 2px rgb(64, 64, 64);
 	border-radius: 0px 0px 0px 0px;
-	margin-right: 80px;
-	margin-left: 80px;
+	margin-right: 7%;
+	margin-left: 7%;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	box-shadow: 0 0 20px rgb(0, 0, 0);
