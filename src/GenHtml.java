@@ -186,7 +186,7 @@ public class GenHtml {
 		String unit = chapters.get(0).replaceAll(" ", "");
 		sw.print("<td>");
 		sw.println("<a href=\"\\" + unit + "/"
-				+ chapters.get(1).replaceAll(" ", "") + "\">"
+				+ chapters.get(1).replaceAll(" ", "") + "/info.html\">"
 				+ chapters.get(1)
 				+ "</a>");
 
@@ -194,7 +194,7 @@ public class GenHtml {
 			sw.println("<tr>");
 			sw.println("<td>" + (row++));
 			sw.println("<td>" + "<a href=\"\\" + unit + "/"
-					+ chapters.get(i).replaceAll(" ", "") + "\">"
+					+ chapters.get(i).replaceAll(" ", "") + "/info.html\">"
 					+ chapters.get(i)
 					+ "</a>");
 		}
