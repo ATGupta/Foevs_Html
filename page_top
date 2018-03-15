@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
         <title>Facts of Environmental Science</title>
         <link rel="shortcut icon" href="Resources_FOEVS_ATG/title_image"/>
         <link href="Resources_FOEVS_ATG/styles.css" type="text/css" rel="stylesheet"/>
@@ -33,11 +33,10 @@
                     </ul>
                 </li>
                 <li>
-               		<a href="">Chapters &#9662</a>
-\takefromchapterMenu
+               		<a href="?un=Index&ch=contents">Index</a>
 				</li>
                 <li>
-                	<a href="?un=Contact&ch=contact">Contact</a>
+					<a href="?un=Contact&ch=contact">Contact</a>
                 </li>
             </ul>
         </div>

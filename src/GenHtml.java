@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.Vector;
 
 public class GenHtml {
 
@@ -113,39 +114,90 @@ public class GenHtml {
 		}
 	}
 
+	int row = 1;
 	private void takeFromChapterMenu(String st, PrintWriter sw) throws IOException {
 		BufferedReader br = readFun(st);
 		int tab = -1;
-		int row = 0;
 		String unit = "";
+
+		Vector<String> chapters = new Vector<String>();
+
 		for (;;) {
 			String a = br.readLine();
 
 			if (a == null) {
-				sw.println("</ul>\n</li>\n</ul>");
+				if (tab == 2)
+					writeChapters(sw, chapters);
+
+				sw.println("</tbody>");
+				sw.println("</table>");
 				break;
 			}
-			// a=a.toUpperCase();
 
-			if (a.startsWith("\t")) {
+			if (a.startsWith("\t\t")) {
+				a = a.substring(2);
+				chapters.add(a);
+				tab = 2;
+			} else if (a.startsWith("\t")) {
 				a = a.substring(1);
-				if (tab == 0) {
-					sw.println("<ul>");
-					tab = 1;
-				}
-				sw.println("<li><a href=\"/" + unit.replaceAll("\\s", "") + "/" + a.replaceAll("\\s", "") + "/info.html" + "\">" + a
-						+ "</a></li>");
+
+				if (tab == 2)
+					writeChapters(sw, chapters);
+				
+				tab = 1;
+				sw.println("<tr>");
+				sw.println("<td>"+row++);
+				sw.println("<td rowspan=");
+				chapters.add(a);
 			} else {
-				unit = a;
 				if (tab == -1) {
-					sw.println("<ul>");
-					tab = 0;
-				} else if (tab == 1) {
-					sw.println("</ul>\n</li>");
-					tab = 0;
+					sw.println("<h2 style=\"text-align: center\">" + a + "</h2>");
+					sw.println(
+							"<table border=1 style=\"margin-right: 100px;margin-left: 100px;border-collapse:collapse\">\n"
+									+ "	<tbody>\n"
+									+ "		<tr>\n"
+									+ "			<th>S. NO.\n"
+									+ "			<th>UNIT\n"
+									+ "			<th>CHAPTER");
+				} else {
+					if (tab == 2) {
+						writeChapters(sw, chapters);
+					}
+					
+					sw.println("\t</tbody>" + "</table>\n");
+					sw.println("<h2 style=\"text-align: center\">" + a + "</h2>");
+					sw.println(
+							"<table border=1 style=\"margin-right: 100px;margin-left: 100px;border-collapse:collapse\">\n"
+									+ "	<tbody>\n" 
+									+ "		<tr>\n"
+									+ "			<th>S. NO.\n"
+									+ "			<th>UNIT\n"
+									+ "			<th>CHAPTER");
 				}
-				sw.println("<li><a href=\"\">" + a + " &#9656</a>");
+				tab = 0;
+				row=1;
 			}
 		}
+	}
+
+	private void writeChapters(PrintWriter sw, Vector<String>chapters) {
+		sw.print(chapters.size() - 1 + ">");
+		sw.println(chapters.get(0));
+		String unit = chapters.get(0).replaceAll(" ", "");
+		sw.print("<td>");
+		sw.println("<a href=\"\\" + unit + "/"
+				+ chapters.get(1).replaceAll(" ", "") + "\">"
+				+ chapters.get(1)
+				+ "</a>");
+
+		for (int i = 2; i < chapters.size(); i++) {
+			sw.println("<tr>");
+			sw.println("<td>" + (row++));
+			sw.println("<td>" + "<a href=\"\\" + unit + "/"
+					+ chapters.get(i).replaceAll(" ", "") + "\">"
+					+ chapters.get(i)
+					+ "</a>");
+		}
+		chapters.removeAllElements();
 	}
 }
