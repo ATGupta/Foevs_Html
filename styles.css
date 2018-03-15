@@ -5,6 +5,8 @@ html {
 #headerImage {
 	display: inline-block;
 	margin-top: 25px;
+	margin-left: 50%;
+	margin-right: 100%;
 	border: solid 2px rgb(64, 64, 64);
 	border-radius: 5px 5px 5px 5px;
 }
