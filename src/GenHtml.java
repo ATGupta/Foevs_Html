@@ -131,6 +131,8 @@ public class GenHtml {
 
 				sw.println("</tbody>");
 				sw.println("</table>");
+				sw.println("<p><marquee><i><b>Click on the name of a chaper to continue.</i></b></marquee>");
+				sw.println("<p>");
 				break;
 			}
 
@@ -151,6 +153,8 @@ public class GenHtml {
 				chapters.add(a);
 			} else {
 				if (tab == -1) {
+					sw.println("<p><marquee><i><b>Click on the name of a chaper to continue.</i></b></marquee>");
+					sw.println("<p>");
 					sw.println("<h2 style=\"text-align: center\">" + a + "</h2>");
 					sw.println(
 							"<table border=1 style=\"margin-right: 100px;margin-left: 100px;border-collapse:collapse\">\n"
@@ -165,6 +169,8 @@ public class GenHtml {
 					}
 					
 					sw.println("\t</tbody>" + "</table>\n");
+					sw.println("<p><marquee><i><b>Click on the name of a chaper to continue.</i></b></marquee>");
+					sw.println("<p>");
 					sw.println("<h2 style=\"text-align: center\">" + a + "</h2>");
 					sw.println(
 							"<table border=1 style=\"margin-right: 100px;margin-left: 100px;border-collapse:collapse\">\n"
