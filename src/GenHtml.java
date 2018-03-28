@@ -51,7 +51,7 @@ public class GenHtml {
 				}
 			} else {
 				if (n1.equals("data")) {
-					createWebpage(n1, getPrintObject("info.html"));
+					createWebpage(n1, getPrintObject("index.html"));
 				} else
 					copyFile(files1[i1].getAbsolutePath(), n1);
 			}
