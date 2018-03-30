@@ -25,16 +25,16 @@
         <div id="nav">
             <ul>
                 <li>
-                    <a href="./">Home &#9662</a>
-                    <ul>
-                        <li><a href="?un=Home&ch=acknowledgement">Acknowledgements</a></li>
-                    </ul>
+                    <a href="./">Home</a>
                 </li>
                 <li>
-               		<a href="?un=Index&ch=contents">Contents</a>
+               		<a href="?un=Home&ch=contents">Contents</a>
 				</li>
                 <li>
-					<a href="?un=Contact&ch=contact">Contact</a>
+					<a href="?un=Home&ch=contact">Contact Us</a>
+                </li>
+                <li>
+                	<a href="?un=Home&ch=acknowledgement">Acknowledgements</a>
                 </li>
             </ul>
         </div>
