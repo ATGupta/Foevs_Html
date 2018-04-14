@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
+    	<title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
         <link rel="shortcut icon" href="\title_image"/>
         <link href="\styles.css" type="text/css" rel="stylesheet"/>
     </head>
@@ -21,6 +21,12 @@
             	</tbody>
             </table>
         </div>
+        <form onsubmit="searchthisSite()">
+        <p style="text-align:right">
+        	<input placeholder="Search" id="searchfoevs"></input>
+        	<button>Search foevs.in</button>
+        </p>
+        </form>
         <div id="nav">
             <ul>
                 <li>
@@ -38,6 +44,19 @@
             </ul>
         </div>
         <p></p>
+        <script>
+        	function searchthisSite(){
+				var input = document.getElementById("searchfoevs").value;
+				arr=input.split(" ");
+				search=arr[0];
+				for(var i=1;i<arr.length;i++){
+					search=search + "+" + arr[i];
+				}
+				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = "https://www.google.com/search?q="+search;
+				window.open(search);
+        	}
+        </script>
 <h2 style="text-align: center">CONSERVATION</h2>
 
 <p>Conservation is an ethic of resource use, allocation, and protection. Its primary focus is upon maintaining the health of the natural world its, fisheries, habitats, and biological diversity.
@@ -152,7 +171,7 @@
 
 <p><b>Limitations of scientific forestry: -</b> 
 <p>A few limitations of scientific forestry are: -
-<p style="margin-left: 200px;">&#8226 Scientific Forest management systems are not readily understandable.
+<p style="margin-left: 150px;">&#8226 Scientific Forest management systems are not readily understandable.
 <br>&#8226 The knowledge of scientific forestry is linked with literacy and is confined with literate people only.
 <br>&#8226 Insufficient utilization of indigenous forestry. Lack of literacy among indigenous forest managers.
 
@@ -306,8 +325,7 @@
 <br>&#8226 Reasons for decline include persecution of wild elephants due to the crop damage they are perceived to cause, hunting (mainly for ivory but also for meat) and habitat loss due to expanding human population and the loss of forests in Asia.
 <p style="text-align: right">(https://www.elephantnaturepark.org/)
     </body>
-    <footer>
-    	<p style="text-align: center">
+    <footer style="text-align: center">
     	At social media
     	<a  title="Google+" href="https://plus.google.com/u/0/112623709961694793064" target="_blank">
     		<img style="height: 12px" src="\Google">
@@ -321,6 +339,8 @@
     	</a>
     	<br>
     	This website runs best on latest version of Chrome and Firefox.
-    	<p style="text-align: center">&#169;
+    	<p></p>
+    	&#169;
+    	<p>
     </footer>
 </html>

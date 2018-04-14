@@ -21,6 +21,12 @@
             	</tbody>
             </table>
         </div>
+        <form onsubmit="searchthisSite()">
+        <p style="text-align:right">
+        	<input placeholder="Search" id="searchfoevs"></input>
+        	<button>Search foevs.in</button>
+        </p>
+        </form>
         <div id="nav">
             <ul>
                 <li>
@@ -38,6 +44,19 @@
             </ul>
         </div>
         <p></p>
+        <script>
+        	function searchthisSite(){
+				var input = document.getElementById("searchfoevs").value;
+				arr=input.split(" ");
+				search=arr[0];
+				for(var i=1;i<arr.length;i++){
+					search=search + "+" + arr[i];
+				}
+				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = "https://www.google.com/search?q="+search;
+				window.open(search);
+        	}
+        </script>
 <h2 style="text-align: center">POLLUTION MONITORING</h2>
 
 <p>Human population uses automobiles, which release harmful gases. Industries and factories release wastes which pollute all types of natural resources (land, air, water) and do a lot of sound pollution. Domestic wastes are disposed off which degrade natural beauty and quality.
@@ -59,8 +78,7 @@
 <p>Ambient Monitoring is the systematic, long-term assessment of pollutant levels by measuring the quantity and types of certain pollutants in the surrounding, outdoor air.
 <p>Emissions Measurement is the process of monitoring particulate and gaseous emissions from a specific source.
     </body>
-    <footer>
-    	<p style="text-align: center">
+    <footer style="text-align: center">
     	At social media
     	<a  title="Google+" href="https://plus.google.com/u/0/112623709961694793064" target="_blank">
     		<img style="height: 12px" src="\Google">
@@ -74,6 +92,8 @@
     	</a>
     	<br>
     	This website runs best on latest version of Chrome and Firefox.
-    	<p style="text-align: center">&#169;
+    	<p></p>
+    	&#169;
+    	<p>
     </footer>
 </html>

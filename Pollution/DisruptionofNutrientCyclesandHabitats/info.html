@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
+    	<title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
         <link rel="shortcut icon" href="\title_image"/>
         <link href="\styles.css" type="text/css" rel="stylesheet"/>
     </head>
@@ -21,6 +21,12 @@
             	</tbody>
             </table>
         </div>
+        <form onsubmit="searchthisSite()">
+        <p style="text-align:right">
+        	<input placeholder="Search" id="searchfoevs"></input>
+        	<button>Search foevs.in</button>
+        </p>
+        </form>
         <div id="nav">
             <ul>
                 <li>
@@ -38,6 +44,19 @@
             </ul>
         </div>
         <p></p>
+        <script>
+        	function searchthisSite(){
+				var input = document.getElementById("searchfoevs").value;
+				arr=input.split(" ");
+				search=arr[0];
+				for(var i=1;i<arr.length;i++){
+					search=search + "+" + arr[i];
+				}
+				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = "https://www.google.com/search?q="+search;
+				window.open(search);
+        	}
+        </script>
 <h2 style="text-align: center">DISRUPTION OF NUTRIENT CYCLES AND HABITATS</h2>
 
 <p>Pollution is the main cause of disruption of nutrient cycles and habitats. Let's discuss how.
@@ -162,8 +181,7 @@ NO<sub>x</sub>
 <p>The burning of fossil fuels produces around 21.3 billion tonnes (21.3 gigatonnes) of carbon dioxide (CO2) per year, but it is estimated that natural processes can only absorb about half of that amount, so there is a net increase of 10.65 billion tonnes of atmospheric carbon dioxide per year (one tonne of atmospheric carbon is equivalent to 44/12 or 3.7 tonnes of carbon dioxide). Carbon dioxide is one of the greenhouse gases that enhances radiative forcing and contributes to global warming, causing the average surface temperature of the Earth to rise in response, which the vast majority of climate scientists agree will cause major adverse effects.
 <p style="text-align: right">(http://en.wikipedia.org/wiki/Fossil_fuel)
     </body>
-    <footer>
-    	<p style="text-align: center">
+    <footer style="text-align: center">
     	At social media
     	<a  title="Google+" href="https://plus.google.com/u/0/112623709961694793064" target="_blank">
     		<img style="height: 12px" src="\Google">
@@ -177,6 +195,8 @@ NO<sub>x</sub>
     	</a>
     	<br>
     	This website runs best on latest version of Chrome and Firefox.
-    	<p style="text-align: center">&#169;
+    	<p></p>
+    	&#169;
+    	<p>
     </footer>
 </html>

@@ -4,7 +4,6 @@
         <title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
         <link rel="shortcut icon" href="Resources_FOEVS_ATG/title_image"/>
         <link href="Resources_FOEVS_ATG/styles.css" type="text/css" rel="stylesheet"/>
-        
     </head>
     <body >
         <div id="header">
@@ -22,6 +21,12 @@
             	</tbody>
             </table>
         </div>
+        <form onsubmit="searchthisSite()">
+        <p style="text-align:right">
+        	<input placeholder="Search" id="searchfoevs"></input>
+        	<button>Search foevs.in</button>
+        </p>
+        </form>
         <div id="nav">
             <ul>
                 <li>
@@ -39,3 +44,16 @@
             </ul>
         </div>
         <p></p>
+        <script>
+        	function searchthisSite(){
+				var input = document.getElementById("searchfoevs").value;
+				arr=input.split(" ");
+				search=arr[0];
+				for(var i=1;i<arr.length;i++){
+					search=search + "+" + arr[i];
+				}
+				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = "https://www.google.com/search?q="+search;
+				window.open(search);
+        	}
+        </script>
