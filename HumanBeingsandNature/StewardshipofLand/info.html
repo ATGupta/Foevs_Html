@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
+    	<title>Facts of Environmental Science - EVS for Class 11 and 12 students [ISC board], undergrads, and other folks.</title>
         <link rel="shortcut icon" href="\title_image"/>
         <link href="\styles.css" type="text/css" rel="stylesheet"/>
     </head>
@@ -21,6 +21,12 @@
             	</tbody>
             </table>
         </div>
+        <form onsubmit="searchthisSite()">
+        <p style="text-align:right">
+        	<input placeholder="Search" id="searchfoevs"></input>
+        	<button>Search foevs.in</button>
+        </p>
+        </form>
         <div id="nav">
             <ul>
                 <li>
@@ -38,6 +44,19 @@
             </ul>
         </div>
         <p></p>
+        <script>
+        	function searchthisSite(){
+				var input = document.getElementById("searchfoevs").value;
+				arr=input.split(" ");
+				search=arr[0];
+				for(var i=1;i<arr.length;i++){
+					search=search + "+" + arr[i];
+				}
+				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = "https://www.google.com/search?q="+search;
+				window.open(search);
+        	}
+        </script>
 <h2 style="text-align: center">STEWADSHIP OF LAND</h2>
 
 <p>"Steward" means a person or a body who is responsible to manage a natural resource. "Stewardship" is an ethic that embodies responsible planning and management of resource(s).
@@ -76,8 +95,7 @@ His
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 5. Afforestation
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 6. Replacement of chemical fertilizers by natural manure
     </body>
-    <footer>
-    	<p style="text-align: center">
+    <footer style="text-align: center">
     	At social media
     	<a  title="Google+" href="https://plus.google.com/u/0/112623709961694793064" target="_blank">
     		<img style="height: 12px" src="\Google">
@@ -91,6 +109,8 @@ His
     	</a>
     	<br>
     	This website runs best on latest version of Chrome and Firefox.
-    	<p style="text-align: center">&#169;
+    	<p></p>
+    	&#169;
+    	<p>
     </footer>
 </html>
