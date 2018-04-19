@@ -47,12 +47,7 @@
         <script>
         	function searchthisSite(){
 				var input = document.getElementById("searchfoevs").value;
-				arr=input.split(" ");
-				search=arr[0];
-				for(var i=1;i<arr.length;i++){
-					search=search + "+" + arr[i];
-				}
-				search = search + "+site%3Ahttp%3A%2F%2Ffoevs.in";
+				search = input + "+site%3Ahttp%3A%2F%2Ffoevs.in";
 				search = "https://www.google.com/search?q="+search;
 				window.open(search);
         	}
@@ -118,7 +113,7 @@
 <p style="text-align: right">(http://en.wikipedia.org/wiki/Housing_in_India#Low_income_housing)
 
 <p style="text-align: center"><img style="max-height: 300px; max-width:80%;" src="image5">
-<br>Fig. 4.7. Housing
+<br>Fig. 5. Housing
 <p style="text-align: right">(http://inhabitat.com/indias-first-green-housing-project-completed/)
 
 <p><b>Constraints in tracking environmental problems: -</b> 
